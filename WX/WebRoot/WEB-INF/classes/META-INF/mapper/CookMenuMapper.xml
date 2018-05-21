@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.wx.res.model.CookMenu.CookMenuMapper">
+ 	
+	<select id="getRamData" parameterType="int" resultType="org.wx.res.model.CookMenu">
+		select * from cookmenu t1 
+		join 
+		(select id from cookmenu t2 limit #{start},1 ) as t2 
+		where t1.id = t2.id;
+ 	</select>
+ 	
+ 	<select id="getDataCount"  resultType="int">
+		select count(id) from cookmenu;
+ 	</select>
+</mapper>

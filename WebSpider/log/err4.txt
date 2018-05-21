@@ -1,0 +1,534 @@
+Id : 4A700D4B8AB746D39CE63E443C0004F8 thread update fail : seed name crawl no data!
+Id : 7B05DD5E4EEF4CB7BA759D5ACE413C9E thread update fail : seed name crawl no data!
+Id : 3A785B164BBA45FBB33E4A67E77C84F8 thread update fail : seed name crawl no data!
+Id : 225FD7F188634FCEAC270B231CC58E67 thread update fail : seed name crawl no data!
+Id : 46A64A9CF80445D69BE485DAE9B9EEC7 thread update fail : seed name crawl no data!
+Id : F2EDA54550C44EF8A3D488E0BE7D0AFB thread update fail : seed name crawl no data!
+Id : CAEC83D6CB944A2290F58EFE4043D1C4 thread update fail : seed name crawl no data!
+Id : CA9FB4F152654319B69899C9C917706D thread update fail : seed name crawl no data!
+Id : C63CEE67F7FC4E21906D037C9E242438 thread update fail : seed name crawl no data!
+Id : 828E536AF91143E2AABB170D19225BB2 thread update fail : seed name crawl no data!
+Id : BAF1EB0FC67A42A48F0550CE7917A279 thread update fail : seed name crawl no data!
+Id : 97353433B6A04FD1A71A5CBD7120F373 thread update fail : seed name crawl no data!
+Id : 8ED0D467454940EF88973E6CF31E19D8 thread update fail : seed name crawl no data!
+Id : 5F9073D37D6341F59A2167779E6DF62B thread update fail : seed name crawl no data!
+Id : EE12B385DFC347389C25E500781AFC9E thread update fail : seed name crawl no data!
+Id : 598A0F9894F3459494329AEC44779BC4 thread update fail : seed name crawl no data!
+Id : 85E818ADB5EF4691A6304771BC285B46 thread update fail : seed name crawl no data!
+Id : 66668FD24D3842B6B5DCBC62099C2A2A thread update fail : seed name crawl no data!
+Id : B9EB87259739412AB527FA5A2DDB4E96 thread update fail : seed name crawl no data!
+Id : EEEF17C3BAF143FB8EC48CE976664D93 thread update fail : seed name crawl no data!
+Id : F2850B2A4F514B569A237428B10EA23A thread update fail : seed name crawl no data!
+Id : 03D13CD40F1643E3ADC80506C806CED7 thread update fail : seed name crawl no data!
+Id : F5318B7BB34B4E9DA4AD3EFB80548305 thread update fail : seed name crawl no data!
+Id : D0F6A51A83C845E399EF4917A47C98E8 thread update fail : seed name crawl no data!
+Id : 104C11907E3C4ADF9CD832B852191917 thread update fail : seed name crawl no data!
+Id : 94DA4708421D4DBC8B4EE08EFAF9DF90 thread update fail : seed name crawl no data!
+Id : ACA1C78780F24DCB8208CBF7B69383C2 thread update fail : seed name crawl no data!
+Id : 8CCAB9E9DD4B4C9BBD45308DF02B6C06 thread update fail : seed name crawl no data!
+Id : 3E7CC341D72A4C3B8E24E8C4BCFB0C38 thread update fail : seed name crawl no data!
+Id : ADA95D24EBAB48E5973790E65D942452 thread update fail : seed name crawl no data!
+Id : 1E314D4301424BF08E358C0EB155793B thread update fail : seed name crawl no data!
+Id : 68FEC27ECB2D40C88F24BC89F3B72329 thread update fail : seed name crawl no data!
+Id : D96D3E77B35C4A72B37F7A00159C52D4 thread update fail : seed name crawl no data!
+Id : 04C5F84E28A647F7BCD345284F304B90 thread update fail : seed name crawl no data!
+Id : E211882672B04BD3AB65895C7148B8BA thread update fail : seed name crawl no data!
+Id : 4B128B40AE2E4D0DAF41734C1191222F thread update fail : seed name crawl no data!
+Id : 25FCE814233049B184657105CEEC1887 thread update fail : seed name crawl no data!
+Id : 20AFAEA844094963A52AB767BBD29563 thread update fail : seed name crawl no data!
+Id : BC740EE7079845179C07DE0187BD44AD thread update fail : seed name crawl no data!
+Id : 144DF00033FE4C14B98DCC46965878B4 thread update fail : seed name crawl no data!
+Id : D6E7E1314F6449F6A1BBF968F22DB2F2 thread update fail : seed name crawl no data!
+Id : 4D7E870F6BB944C0AB371F7BE458427B thread update fail : seed name crawl no data!
+Id : 09556AF7A8ED4F47B0943498FB566610 thread update fail : seed name crawl no data!
+Id : C229D6FAB92641FF9462E735B5E60441 thread update fail : seed name crawl no data!
+Id : C4F0C74FDB3E4D8F8F0E6C0879D28864 thread update fail : seed name crawl no data!
+Id : A27B37D3EFBB493693A42B218BB053B5 thread update fail : seed name crawl no data!
+Id : 7E96C85DB77848E2BD6374298379779F thread update fail : seed name crawl no data!
+Id : 157625007A4C4FA593D30FD21486786F thread update fail : seed name crawl no data!
+Id : DB5CF045FC704B78BB57D8D5B2DFFFC8 thread update fail : seed name crawl no data!
+Id : B6414B703E8E4E02A72DF408ED15619C thread update fail : seed name crawl no data!
+Id : 2933EFAF3D7943AF9CA5CC082749EE6C thread update fail : seed name crawl no data!
+Id : B6043A118C0F4F2EACB7BE1B9743F662 thread update fail : seed name crawl no data!
+Id : 84DB92D24D0844CBB0B14A640CE539B0 thread update fail : seed name crawl no data!
+Id : 6902CB6D45F54ABFA62FA564DAF3D725 thread update fail : seed name crawl no data!
+Id : F26AEE42ED5D42F8AB3FF19303B50974 thread update fail : seed name crawl no data!
+Id : DDFEA7D0D0CF456A801BEE2FD41B5E49 thread update fail : seed name crawl no data!
+Id : 21A45AF2372D462EB1819EE331DD3F90 thread update fail : seed name crawl no data!
+Id : FABFE15CE18C4081999FADBC3FB68D68 thread update fail : seed name crawl no data!
+Id : FDD6ED600C3E4F31BF67F594EAFF1E4D thread update fail : seed name crawl no data!
+Id : 8F167D6707C64F7194A6A0504BF30F09 thread update fail : seed name crawl no data!
+Id : DD5E4B651C194DD7BD38FBF958A113DA thread update fail : seed name crawl no data!
+Id : 62C04D269A8E430CAF5E48DD603C2139 thread update fail : seed name crawl no data!
+Id : 67F7F4A2C5674418B54D9550B75B9590 thread update fail : seed name crawl no data!
+Id : 29B723C85D4C46EE811E9741F2014F87 thread update fail : seed name crawl no data!
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - 5A8C18048E5B4AD4870954596269CA4C
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - E6278B544B3E477E98DF6573B8C1875A
+Id : 25CE956727A04E188FD6464722104FD0 thread update fail : seed name crawl no data!
+Id : C5EED027449846BBB40B73E98CAF6A72 thread update fail : seed name crawl no data!
+Id : 202EEEDF156B4AFEA8B6417646E802C2 thread update fail : seed name crawl no data!
+Id : 77EEA3D730964407951BA1D5201EC389 thread update fail : seed name crawl no data!
+Id : 714B533EC38E4D92B809E2FA76590D27 thread update fail : seed name crawl no data!
+Id : A139ADADE75B4A0DBAFBCFE0A16AEF2E thread update fail : seed name crawl no data!
+Id : BD21104289B24FBE8056F12D80D142AA thread update fail : seed name crawl no data!
+Id : E332701F052140D0AFEDF82364E6266B thread update fail : seed name crawl no data!
+Id : BDD7A0BBB1C44A70B58F56F397A1F54D thread update fail : seed name crawl no data!
+Id : 65E542C47F594AD2AC07F49975E066BC thread update fail : seed name crawl no data!
+Id : 6BE5F09EDB02420F89FB9E07711E07C0 thread update fail : seed name crawl no data!
+Id : 4A9FC2ADE8CA40628ABBB1418354D6A1 thread update fail : seed name crawl no data!
+Id : EDEC1AB9B90641718042E5CF3A6CBCBD thread update fail : seed name crawl no data!
+Id : 3A53D4C26F0A4DFFA8D55E5518DCA63B thread update fail : seed name crawl no data!
+Id : 70B0127DBAA546BF8348777490CE8CF9 thread update fail : seed name crawl no data!
+Id : 810E622FB233474DAFFEE68407993AB7 thread update fail : seed name crawl no data!
+java.sql.SQLException: Incorrect string value: '\xF0\xA1\xBD\xB3\xE5\xB1...' for column 'description' at row 1
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - C1C43D361110432DAABD25C0126D3DC0
+Id : 9AD34D1ADFF44DBF962E127B8B18289C thread update fail : seed name crawl no data!
+Id : 8521ACA6B8214A9682156F3B74C821B9 thread update fail : seed name crawl no data!
+Id : 6730195439B84148A987A5E585921F03 thread update fail : seed name crawl no data!
+Id : D3A6408DD30446C19484347B7EABA895 thread update fail : seed name crawl no data!
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - 9588D50B3AAC4854BB3A4ADD7701D5B2
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - A25A4A884BD34648987D43CD9D09D94F
+Id : 410F2D0363AC478190B4BFE430DB1A48 thread update fail : seed name crawl no data!
+Id : DA7685FFC31D430FB921C5E4070E9C24 thread update fail : seed name crawl no data!
+Id : 0A940B99867941A6BEE06637028F1AC2 thread update fail : seed name crawl no data!
+Id : C621EF2101A8487BACAD55FC94BBB57C thread update fail : seed name crawl no data!
+Id : 8886B469A4E54A438C05BB0BA0CBB34C thread update fail : seed name crawl no data!
+Id : 57E2C7BCCD924BBE84A67738F66D626B thread update fail : seed name crawl no data!
+Id : 7A6E764356D442D3B4ACD6C1584A9A33 thread update fail : seed name crawl no data!
+Id : A47C426B5B774717923A6A0D9417FBD9 thread update fail : seed name crawl no data!
+Id : C67A84B3AE8148BBA20A449B427BEC22 thread update fail : seed name crawl no data!
+Id : 8567170F61CD4A79914F5B8D26AE441C thread update fail : seed name crawl no data!
+Id : AC3866B51A9B4CE6907A435CC1A2C7C1 thread update fail : seed name crawl no data!
+Id : 57F34DFA3CD84D8AACE7D19FF61B8D49 thread update fail : seed name crawl no data!
+Id : CC6A006115D04517BAADAF9BCF68D119 thread update fail : seed name crawl no data!
+Id : 6EB29BC127724D0EBD85E40D833B8700 thread update fail : seed name crawl no data!
+Id : 63BD8123156644E5865F68B8E6A01BEE thread update fail : seed name crawl no data!
+Id : 3A24038D6024423B9543A2C606C35B00 thread update fail : seed name crawl no data!
+Id : 926FCB2B69584922852B656DDCE23478 thread update fail : seed name crawl no data!
+Id : C9747F1B5FB44CFB96E1F55A3017B9C3 thread update fail : seed name crawl no data!
+Id : 9EEDF6B70C0942B19E11DAA07E5D66B9 thread update fail : seed name crawl no data!
+Id : D5BCF58948414AC78B1515DDCCB15A57 thread update fail : seed name crawl no data!
+Id : 572DD255E5264B82BC80536919987713 thread update fail : seed name crawl no data!
+Id : 94784400BE8F4E879B020E6DD2074D55 thread update fail : seed name crawl no data!
+Id : 063C29EAEB284933AF410D1DAEAB3C10 thread update fail : seed name crawl no data!
+Id : 955129C011364826BB704B94393A5BC5 thread update fail : seed name crawl no data!
+Id : 91956848710E4F9A90DFE598ED709B4A thread update fail : seed name crawl no data!
+Id : 015D6A30DE004575A194AE95E24075CE thread update fail : seed name crawl no data!
+Id : CEE9275C329842FE906357FF5250BFC1 thread update fail : seed name crawl no data!
+Id : 64CA14B3FB384A85969AF0DFDED8525D thread update fail : seed name crawl no data!
+Id : 74A0802744CA4D46A34020A6CE693F12 thread update fail : seed name crawl no data!
+Id : 82AEC5D7342948C3A85BFBA6054428DC thread update fail : seed name crawl no data!
+Id : EB15EED1B0DE472AAD048F8ABCE32736 thread update fail : seed name crawl no data!
+Id : D07D1E0F993749CA82B789AA6E620DDB thread update fail : seed name crawl no data!
+Id : 463EFF8DAC0143A19580D8B757169B25 thread update fail : seed name crawl no data!
+Id : 209F5637B62C4E189BE4BDFB0B2F1475 thread update fail : seed name crawl no data!
+Id : BD1857DB441940708F4B098890013C18 thread update fail : seed name crawl no data!
+Id : 80114DABEA2149BA97CE956C2422A5AA thread update fail : seed name crawl no data!
+Id : AE05EC03F4AF437C9FAD7C7A625616DF thread update fail : seed name crawl no data!
+Id : 0F006B677AB94BF7A91013B6B0CBE829 thread update fail : seed name crawl no data!
+Id : 9CCAE5F6BE7E40F2AD102F1D7071FFFA thread update fail : seed name crawl no data!
+Id : 163957DF45F54AC0BA0871F2A85C772E thread update fail : seed name crawl no data!
+Id : 6BFDCDE5979844B1B3FD1B6F1100D529 thread update fail : seed name crawl no data!
+Id : 64A65B22C10741EA98A1BEFD77B9BDA2 thread update fail : seed name crawl no data!
+Id : 6C6DAFAC71D449A0B1A05D63A944A9BC thread update fail : seed name crawl no data!
+Id : 643A6CF3DEBD41A7ADABBA74E574E155 thread update fail : seed name crawl no data!
+Id : 713B7222BA4649399AE0765256091EA9 thread update fail : seed name crawl no data!
+Id : 60B984B691784785A0ED13489BE35FC4 thread update fail : seed name crawl no data!
+Id : FB343AD96476403A845BE37221C65F50 thread update fail : seed name crawl no data!
+Id : C7C9B7D061F346079532C9B4B672E1A1 thread update fail : seed name crawl no data!
+Id : 799E431EFBB0475498B156C7F2A78AA3 thread update fail : seed name crawl no data!
+Id : 416376F1BC884B859AC473D3BD44199F thread update fail : seed name crawl no data!
+Id : B7BEB331F291489AA9D2674ADD7FE1AE thread update fail : seed name crawl no data!
+Id : 1239F6A21C1848328B3A8A666DA1A4E7 thread update fail : seed name crawl no data!
+Id : CC2767080C3944018F3F02B87E870115 thread update fail : seed name crawl no data!
+Id : 0C0E663074A745F9BEBA3876DBB507A7 thread update fail : seed name crawl no data!
+Id : B94ADF11D39D4CD48E1D2DF61B60BC13 thread update fail : seed name crawl no data!
+Id : DACEC41EF2604B53BDD64EC168097062 thread update fail : seed name crawl no data!
+Id : 6129D1644FEC485E983DFD87CF6F11C1 thread update fail : seed name crawl no data!
+Id : E02A0AED42E246079F892AC4E20C5C26 thread update fail : seed name crawl no data!
+Id : A1A83CDF1A8B4F859FEA0102D3996003 thread update fail : seed name crawl no data!
+Id : F028004897D54AC9AB58557EC1AE9CCA thread update fail : seed name crawl no data!
+Id : 75D0C2CD83FB45B8961C22FA5503BA91 thread update fail : seed name crawl no data!
+Id : 62BEC40A39164B1DB1E5A24E4A467F30 thread update fail : seed name crawl no data!
+Id : F8AF239E2EFA40C0BEA0BCE5C2C22D1B thread update fail : seed name crawl no data!
+Id : 788CB747361B45FCA2CBCA9E56394059 thread update fail : seed name crawl no data!
+Id : AA8765720591441C90CD94703364D1E1 thread update fail : seed name crawl no data!
+Id : 0B7C481606094BEFBEDE48966E4B8F40 thread update fail : seed name crawl no data!
+Id : 6B0DD1E6A3B04304B0AE1E724380312E thread update fail : seed name crawl no data!
+Id : 4C0BE72A78A54F6A96CF512AC7EB34AE thread update fail : seed name crawl no data!
+Id : FAA21A3C6C414289AC3EF93B61BED01E thread update fail : seed name crawl no data!
+Id : 9DD3DC61CCDC4AFB8C18E655B6162839 thread update fail : seed name crawl no data!
+Id : B0A8C5473EAC4495B0995F106FA8E61A thread update fail : seed name crawl no data!
+Id : 614A26AA87704463A61064F2A880A16D thread update fail : seed name crawl no data!
+Id : 4128B4BD33C74DFF995BF560614C133A thread update fail : seed name crawl no data!
+Id : 5BCFFE3AA17448649F507DAE6AF04F43 thread update fail : seed name crawl no data!
+Id : 85AB0EEFDDDB4550B53ADDA4224C52F8 thread update fail : seed name crawl no data!
+Id : B6CC826437B34AF282D7290D37FDAFFD thread update fail : seed name crawl no data!
+Id : 0EA3262D0FF14EE18C0E940A6D884623 thread update fail : seed name crawl no data!
+Id : 922DF16380D54A98990533B4B2030503 thread update fail : seed name crawl no data!
+Id : EB6046E475134893BC4610DE7ED793D1 thread update fail : seed name crawl no data!
+Id : 30E75C42F8E44F23AC040D03EBE81FF3 thread update fail : seed name crawl no data!
+Id : 79C25DEC25DA434A858B280FEA876D33 thread update fail : seed name crawl no data!
+java.sql.SQLException: Parameter index out of range (3 > number of parameters, which is 2).
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:897)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:886)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:3327)
+	at com.mysql.jdbc.PreparedStatement.setInternal(PreparedStatement.java:3312)
+	at com.mysql.jdbc.PreparedStatement.setString(PreparedStatement.java:4027)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:71)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - 567358C0E18C405189606FBD52193007
+Id : 3E4B836230224C6FAC959F84CB33EE52 thread update fail : seed name crawl no data!
+Id : 697AE6DEE31544539841811EEB8E03BF thread update fail : seed name crawl no data!
+Id : 7310283665DA4A16A396EC71557F9533 thread update fail : seed name crawl no data!
+Id : 3ECF9290FC654A68A2D42BF6115129F6 thread update fail : seed name crawl no data!
+Id : 60DF9D0A4B774C4B8E37F145932C7629 thread update fail : seed name crawl no data!
+Id : 10F7B600834D428088536863ACA02043 thread update fail : seed name crawl no data!
+Id : D3F9CB398B9E41629EBDCC01A18D2103 thread update fail : seed name crawl no data!
+Id : 8B665A685F5C4543883689C647334298 thread update fail : seed name crawl no data!
+Id : 2A8722BE702C42ACAD5F6759ED7D3CCE thread update fail : seed name crawl no data!
+Id : 0BB109070B8F4A5CA55CE70461164F62 thread update fail : seed name crawl no data!
+Id : FDBCBCE4DB69450E9FDC990207F593F8 thread update fail : seed name crawl no data!
+Id : 886FAE4146214F73B6BB176B95622CD6 thread update fail : seed name crawl no data!
+Id : 8DDC57F1F02A46FF950ED667AE4712C2 thread update fail : seed name crawl no data!
+Id : FBC7979FF43942FB98A62A245D354CDF thread update fail : seed name crawl no data!
+Id : AB743D1B56DE44ADBB7FB9C71A438F09 thread update fail : seed name crawl no data!
+Id : C4CD9401722F495D8F161F4E70975495 thread update fail : seed name crawl no data!
+Id : 724DA3C45DCC4E9FA0678F7227B4AAFE thread update fail : seed name crawl no data!
+Id : 7CBE0945285149E9A7D69BB311BE7F27 thread update fail : seed name crawl no data!
+Id : AC326265C5AB448592DF1454024D71B9 thread update fail : seed name crawl no data!
+Id : 8E4C0E3FAFD647DFA0B4926C6EEC975B thread update fail : seed name crawl no data!
+Id : EDF78DDDACEB4A84BC8293BFB673A5B5 thread update fail : seed name crawl no data!
+Id : 0C4E11B7D543448A93263D43381AFB26 thread update fail : seed name crawl no data!
+Id : 27113C4447B44EB0A1CEC4DA24E8A1B7 thread update fail : seed name crawl no data!
+Id : 81D8D8AF2E6445A689C403B8B94915EB thread update fail : seed name crawl no data!
+Id : 5C69C5EBAD1B4251963FF5AD61F73EE2 thread update fail : seed name crawl no data!
+Id : 09E55AF7A3E043778812D4304C457898 thread update fail : seed name crawl no data!
+Id : F5A70D5172A64C8D8E5A4B6D46EAE222 thread update fail : seed name crawl no data!
+Id : C83995A3F31048C5B661722C64EA1710 thread update fail : seed name crawl no data!
+Id : 0CAE80E18EE44C17A5DD0D21BDEDF91D thread update fail : seed name crawl no data!
+Id : 1F7A402CEA4F4064892748568D923224 thread update fail : seed name crawl no data!
+Id : 9150F8AE448342D3BA99585B361388BC thread update fail : seed name crawl no data!
+Id : 6E390BAA547248A3ABBD65994FFAD31C thread update fail : seed name crawl no data!
+Id : C265942E1BF24375A6686A05FAE0AB7A thread update fail : seed name crawl no data!
+Id : 99BC8318118C43828E06160C8BBE4C33 thread update fail : seed name crawl no data!
+Id : B8075E5761AB4339AC366B07BAAAAEB1 thread update fail : seed name crawl no data!
+Id : 0BC6F2DDA7A94632A2D0B35EBFDCD2AC thread update fail : seed name crawl no data!
+Id : A7F73F61C3ED4FB880B81A5E79FC4BBC thread update fail : seed name crawl no data!
+Id : B0CCCCD86B2C4A9D860428A1239E7DF8 thread update fail : seed name crawl no data!
+Id : A3FF1D2A2FE34A7EBABF6A592FE2435B thread update fail : seed name crawl no data!
+Id : 1C76F02385874F6F9DE2FC9B082568C8 thread update fail : seed name crawl no data!
+Id : 1B66D806E4A14BA7AAA644C4A0358E9B thread update fail : seed name crawl no data!
+Id : 3D720807B16747BCB7E16FFC9965D61E thread update fail : seed name crawl no data!
+Id : 3A9FE22F324E417086BDE94EEDFFD90E thread update fail : seed name crawl no data!
+Id : 38F3CDD0D3954490B824F29A829E5309 thread update fail : seed name crawl no data!
+Id : 8277AB9902804D53BE86FC4E1326830A thread update fail : seed name crawl no data!
+Id : FA2A980A600E4D97BC9147F358267218 thread update fail : seed name crawl no data!
+Id : B977CAE494B24C138332EA4B9F2FC80A thread update fail : seed name crawl no data!
+Id : B8EF249482AD4F5FB019FEE4F51E85D0 thread update fail : seed name crawl no data!
+Id : 9CA21FB80A0F45D0A33BE2C4423B3909 thread update fail : seed name crawl no data!
+Id : E341F41D13384A58B8A4F9AEC23FC926 thread update fail : seed name crawl no data!
+Id : 20F490BDE8FF461BB9E030646AF3C334 thread update fail : seed name crawl no data!
+Id : 34E141C28FA44CB2A57B6E58982530E4 thread update fail : seed name crawl no data!
+Id : 4FF76B48B54B451DA4BABD81C359FAB7 thread update fail : seed name crawl no data!
+Id : 6B2610B2D9E545698EC4BB167E8AFCB5 thread update fail : seed name crawl no data!
+Id : 131C3EAA2CE7480AB0BA1F6C74F4FA5D thread update fail : seed name crawl no data!
+Id : 0EE46CDC06BC45A7816C84514B5B842A thread update fail : seed name crawl no data!
+Id : 1761A9C0C48B4C0DB673673C804468CD thread update fail : seed name crawl no data!
+Id : 57AC58DA3E224887898330B5D4C8342A thread update fail : seed name crawl no data!
+Id : 6302BE57DFB949B898A981C130143405 thread update fail : seed name crawl no data!
+Id : 67072CE0F1FC47828D458E8AEEC7EB5D thread update fail : seed name crawl no data!
+Id : 67833C8CDAA14E15B6C7DD5DD186A783 thread update fail : seed name crawl no data!
+Id : C5D51502291B41779BD2BE7A8A5D8319 thread update fail : seed name crawl no data!
+Id : A3B88A90995746C0B7DA25E411392017 thread update fail : seed name crawl no data!
+Id : 19735DF97FB642DEA0ADF21F0C568B46 thread update fail : seed name crawl no data!
+Id : C0B53B3EE50A4B8DAE9BFE3C04D88D04 thread update fail : seed name crawl no data!
+Id : A69681902005424CB39283BA6FE49F1D thread update fail : seed name crawl no data!
+Id : 27296A76D711439AAD54DDEA455D5DE4 thread update fail : seed name crawl no data!
+Id : D0B06ABD889741579BA8A9005FED19A5 thread update fail : seed name crawl no data!
+Id : 0699FA0B12834DCEA02E3DEF64DF0D8B thread update fail : seed name crawl no data!
+Id : CD8B909130204A62A022FA0B77889393 thread update fail : seed name crawl no data!
+Id : C857CBCCC0E946D68305EA5E4F9B25F5 thread update fail : seed name crawl no data!
+Id : 920628AF97284DBBB127699CBC74C5FA thread update fail : seed name crawl no data!
+Id : 590C2BB951CE4903A91C83273DFF7095 thread update fail : seed name crawl no data!
+Id : 88CDECDC1E3F4ECF90DE72E2EDC464DF thread update fail : seed name crawl no data!
+Id : 8A8E00F4815E4FA380CA65536CCF6282 thread update fail : seed name crawl no data!
+Id : 73D89D7C501247C3821C6207534E6BFF thread update fail : seed name crawl no data!
+Id : 0874123124A54DC0B04D643DEE109A7A thread update fail : seed name crawl no data!
+Id : D99936787487423980C3C7849FF20EBE thread update fail : seed name crawl no data!
+Id : 2E310D4C0E524FFF81198E49D8E0EFF4 thread update fail : seed name crawl no data!
+Id : 8DA76D56AD1C4FD0AA95A270CDA63136 thread update fail : seed name crawl no data!
+Id : 53B501AF3B19461EA99D8F21F5D3DC4C thread update fail : seed name crawl no data!
+Id : 33A7F32394D04D058AFF8EB6E82EF28E thread update fail : seed name crawl no data!
+Id : A78F1C3FBA5244018038C0E91BB0475C thread update fail : seed name crawl no data!
+Id : 95B0E1B90DE645AD981B29B9AE773697 thread update fail : seed name crawl no data!
+Id : 9528790A5BC043AABC597E9670CB5D58 thread update fail : seed name crawl no data!
+Id : B9D60606CFC74B088A081984A10E04C9 thread update fail : seed name crawl no data!
+Id : D420B2FCE77D49229DF3C29624404F94 thread update fail : seed name crawl no data!
+Id : 1F2C6477D03D46849EEA396D440BE40A thread update fail : seed name crawl no data!
+Id : 3AEA92F311794F9F8C8303F65FF4B9B9 thread update fail : seed name crawl no data!
+Id : 2A9282CE104B46B086EB848DFF74A0C8 thread update fail : seed name crawl no data!
+Id : 064DA4D7161A400482A75285CBC9B1E4 thread update fail : seed name crawl no data!
+Id : BD89DDDC13F143B8AB0CF08AC586D930 thread update fail : seed name crawl no data!
+Id : 5C3A9648657846138FC6B1DFF7AA5758 thread update fail : seed name crawl no data!
+Id : 4F2310725FE6412583851FE32C3ADF59 thread update fail : seed name crawl no data!
+Id : 26F48A52ABB0449EB8B0CD7E46407ADD thread update fail : seed name crawl no data!
+Id : E1DE11C0B686493782AA991E691861D9 thread update fail : seed name crawl no data!
+Id : B1D2F7BB6C184493ABCC6549E8B55122 thread update fail : seed name crawl no data!
+Id : 6B453FE131CF4DDB96D1006EAD52A352 thread update fail : seed name crawl no data!
+Id : 7BF886CF537F4CF5ADEA4EBE215A901D thread update fail : seed name crawl no data!
+Id : 0A977F931FA848DF9C84A0364D97B85E thread update fail : seed name crawl no data!
+Id : EA92A2FC0DEC4390B8315A9C1F4297B4 thread update fail : seed name crawl no data!
+Id : 0B04340001424F858D8C56E0ECAAA447 thread update fail : seed name crawl no data!
+Id : C3F4B5A931CA45BC9A7DC7B2E068D9D6 thread update fail : seed name crawl no data!
+Id : 993295B4813846B9A5A2F787768C5ABA thread update fail : seed name crawl no data!
+Id : 7259ED80D9CE469D877BD352B27ED74A thread update fail : seed name crawl no data!
+Id : 38E5C56ACE1D470DB2D0C8F16F45AA60 thread update fail : seed name crawl no data!
+Id : 4F410B3DCD8B4A52A1AA3F905A3FB595 thread update fail : seed name crawl no data!
+Id : C3A761815835497CAE505183C1098B63 thread update fail : seed name crawl no data!
+Id : C09B8A2F9A2D40D285A3CE79AF9BA555 thread update fail : seed name crawl no data!
+Id : 429CFA9ED59044E6BC4A847947C23F82 thread update fail : seed name crawl no data!
+Id : BDFBC954837845F8BB0B2E08522ABAB9 thread update fail : seed name crawl no data!
+Id : 64E11FE2C8F44B4881F600DEC7C13FBF thread update fail : seed name crawl no data!
+Id : B9CABD0ED5C54A35A6090B6553A185FF thread update fail : seed name crawl no data!
+Id : 7DCD70A90B7745D095DC89F754C45C13 thread update fail : seed name crawl no data!
+Id : 079B98277DE74F5EA0E9BE2F4E17AF0A thread update fail : seed name crawl no data!
+Id : 9A93120D0AAE49E78A12088D3CCD3F76 thread update fail : seed name crawl no data!
+Id : 53B9EB285C1E4F00A2F5A4DD0B6DA0B1 thread update fail : seed name crawl no data!
+Id : BAA3209652C94E749F521380BDB4DB8A thread update fail : seed name crawl no data!
+Id : 135DEC91C5424DF881FFF4D2A7886782 thread update fail : seed name crawl no data!
+Id : 3635080F034648F48523AE66AB04685F thread update fail : seed name crawl no data!
+Id : 518CC83672CD499C8A453AF3F53C7D98 thread update fail : seed name crawl no data!
+Id : 5B9983EB6A734150825BF8E40DD1CDC2 thread update fail : seed name crawl no data!
+Id : EEB2D3059CAD4458920F7BC6A79F6A7B thread update fail : seed name crawl no data!
+Id : E330848737134E838872711245599790 thread update fail : seed name crawl no data!
+Id : DB324DCD2F3C4C4BB1E1F1B5354DBD0A thread update fail : seed name crawl no data!
+Id : 92926991E5D44025A4CFD0D197807093 thread update fail : seed name crawl no data!
+Id : 21ED501DC1C34723BF6C589CB27CCAF1 thread update fail : seed name crawl no data!
+Id : F98740C54BEB46BEB7299B067BD91EDC thread update fail : seed name crawl no data!
+Id : 2AA70780AD984131AA0CF3BAE476AF54 thread update fail : seed name crawl no data!
+Id : 579CA9F270244972815B76821B75D9B4 thread update fail : seed name crawl no data!
+Id : 6EDEA9C8C5F547A1B27BEF69C78A0193 thread update fail : seed name crawl no data!
+Id : 1777EC5434DD43E499FE7A08EB8428A3 thread update fail : seed name crawl no data!
+Id : 451D97F258044A84B559E74DC66F6BDD thread update fail : seed name crawl no data!
+Id : C90BE7598B794D4092B5C4BE57B490D3 thread update fail : seed name crawl no data!
+Id : 16D666DD9EA049FA8CBFDCCF440CFFE0 thread update fail : seed name crawl no data!
+Id : 67BB87066C784AC39D538DF912FEC0CD thread update fail : seed name crawl no data!
+Id : 7A6E172B18CB48D7966B2DB831D6340D thread update fail : seed name crawl no data!
+Id : 3193F213C88541208FDF33FE24127692 thread update fail : seed name crawl no data!
+Id : E6B646A4D4204426A28FD41DC8A97FFF thread update fail : seed name crawl no data!
+Id : 7B36A054840448DDA00DA63ACA162DC1 thread update fail : seed name crawl no data!
+Id : 252E6B722BB049078638A1D22ED5005B thread update fail : seed name crawl no data!
+Id : 1D6C483A0AF14DAEA461B2A9D7F5C7E2 thread update fail : seed name crawl no data!
+Id : C60A5F51C6754F76891F1522F007E768 thread update fail : seed name crawl no data!
+Id : 3B099F3E1AFF4DF78925543D2D0F5EA3 thread update fail : seed name crawl no data!
+Id : 96C98C4899EE425FABBB59260C17967A thread update fail : seed name crawl no data!
+Id : C59C086A62744E22BD6CC27D0BF0F699 thread update fail : seed name crawl no data!
+Id : 39CBB3C047C84994AA46168E2D367B0E thread update fail : seed name crawl no data!
+Id : 2B2F0AAF4C4B47DCA1FE8ED174ABD2ED thread update fail : seed name crawl no data!
+Id : A02DFF9D0231431F97877F3D23BFD046 thread update fail : seed name crawl no data!
+Id : 1284E787445A46818D74427A65F63E46 thread update fail : seed name crawl no data!
+Id : 42033135B8CF481F880498F02375ABAB thread update fail : seed name crawl no data!
+Id : 59512ACBC5984B68888191D6BF6ADF36 thread update fail : seed name crawl no data!
+Id : 8EAA0EFF3D7E4D4E91DD30A7AB9B3FF4 thread update fail : seed name crawl no data!
+Id : 26ECCF50C72D4CA18CE91F11231E813B thread update fail : seed name crawl no data!
+Id : E593E2711A6347B3AD40F14D7A730E95 thread update fail : seed name crawl no data!
+Id : 4DF1FE30AD80411CA93DE8C236A80E19 thread update fail : seed name crawl no data!
+Id : FBE7AFC6204B42AAAD1D0B3122664026 thread update fail : seed name crawl no data!
+Id : 18EC4A68EA334A19B9C713EFDA7F7AC8 thread update fail : seed name crawl no data!
+Id : 06B16AC6E9164E2F8FFF8CF299B4186F thread update fail : seed name crawl no data!
+Id : 34717083E6324669A157E9FBE5C744CC thread update fail : seed name crawl no data!
+Id : B76091E295A94B9FA485897775FBF2E8 thread update fail : seed name crawl no data!
+Id : DC7D26655DA747988AA690BB066E7159 thread update fail : seed name crawl no data!
+Id : BA7F9B370E2C4C1F96C83EE36BC6729A thread update fail : seed name crawl no data!
+Id : 0AFFAD3A26AC4E83A73F98D947332F14 thread update fail : seed name crawl no data!
+Id : 7565CA22822D4E7CAE5D94A25ABCD27E thread update fail : seed name crawl no data!
+Id : A03A4CB0CB624B1FB155A2D3510E5BE8 thread update fail : seed name crawl no data!
+Id : C44ACB265CB8411CB75BDF1DCDFB3B37 thread update fail : seed name crawl no data!
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - 79860C495B1C47F6A0861B79B86FB8D9
+Id : E177206FA4524D89948898CC2A4CFEAD thread update fail : seed name crawl no data!
+Id : 448667D5457E413CBAFD97A2AF863157 thread update fail : seed name crawl no data!
+Id : A9F4457E7C81486CADC6F626178E3806 thread update fail : seed name crawl no data!
+Id : 7B1A307FDF954ECD9F47AF340E305CB0 thread update fail : seed name crawl no data!
+Id : C999B1268CCD4BD9B32567BCB1A335E2 thread update fail : seed name crawl no data!
+Id : F9B6EED2186A406B8F7CFF99C271AA5E thread update fail : seed name crawl no data!
+Id : E7ACA2C5F9CA4BC8A005BE8C520D281F thread update fail : seed name crawl no data!
+com.mysql.jdbc.MysqlDataTruncation: Data truncation: Data too long for column 'description' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3971)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2527)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2680)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2494)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1858)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2079)
+	at com.mysql.jdbc.PreparedStatement.executeUpdateInternal(PreparedStatement.java:2013)
+	at com.mysql.jdbc.PreparedStatement.executeLargeUpdate(PreparedStatement.java:5104)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1998)
+	at org.yule.db.service.dao.ViewSpotDao.updateDesc(ViewSpotDao.java:74)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.analyzor(UpdateViewSpotCrawlThread.java:165)
+	at org.yule.page.crawl.threads.UpdateViewSpotCrawlThread.run(UpdateViewSpotCrawlThread.java:203)
+analyzor update fail ： id - 1C7911A197AA4C85AEF40B159AA654E5
+Id : FD03AC602B944336B03BF6E09FA3FD71 thread update fail : seed name crawl no data!
+Id : 23CDA3D1DFAF44EE9C7D79B21E73EF1C thread update fail : seed name crawl no data!
+Id : 9D4358DFC4C34EBD8082ECEF73E40F1D thread update fail : seed name crawl no data!
+Id : 6A7388B5C5E04C8B932841D8F4B31425 thread update fail : seed name crawl no data!
+Id : 5E2A0B72FA704063B8AF284EBD8F72F9 thread update fail : seed name crawl no data!
+Id : CB83267B699B44B89C931BAF13A77C9E thread update fail : seed name crawl no data!
+Id : 5AAAA02E8A0A481B806964F47FDE7E21 thread update fail : seed name crawl no data!
+Id : 4DCA04069C7546E3A13A59358C03AA47 thread update fail : seed name crawl no data!
+Id : 42C25C7190084FB4992006FEEA62B027 thread update fail : seed name crawl no data!
+Id : 0B6378260A0B4261843849650DA56347 thread update fail : seed name crawl no data!
+Id : D500D13DCF274739AE9DFBEFBC42543F thread update fail : seed name crawl no data!
+Id : EFEDCD2849A6448F890C6BDECDA86A1F thread update fail : seed name crawl no data!
+Id : 9FDAE2C96CCF4AF6973B7BA95FEE4E35 thread update fail : seed name crawl no data!
+Id : CC0CEC77FDEF42B5A1D7FC21D293D022 thread update fail : seed name crawl no data!
+Id : CBE5B5572A2A4668A54391B0B42AD32D thread update fail : seed name crawl no data!
+Id : CEC0920E53E44378BAF46A1784FB8D48 thread update fail : seed name crawl no data!
+Id : EFA97808CEEE43E891C38213D512EE09 thread update fail : seed name crawl no data!
+Id : 36440D4F5EFA4A9E820A4028D664EC17 thread update fail : seed name crawl no data!
+Id : 5D722AF7E00D462C834C1313D3BA37DC thread update fail : seed name crawl no data!
+Id : 1C544F9C8A69445088F2AFF682D84254 thread update fail : seed name crawl no data!
+Id : C86038576473414EB0A37F93B797267D thread update fail : seed name crawl no data!
+Id : 3CCF79645D0F47289433C5B8714B6CDB thread update fail : seed name crawl no data!
+Id : D0021D4549E744389F4A99E70DC96A97 thread update fail : seed name crawl no data!
+Id : 484AAF9477224A01A9DAD43D3295E815 thread update fail : seed name crawl no data!
+Id : 85D4A5D3C7F044F8850E67038A6155C0 thread update fail : seed name crawl no data!
+Id : DD6DED38CBAA4B0082955923548A00FD thread update fail : seed name crawl no data!
+Id : DB781A02E6D340A9A4F59D3FA1AB2023 thread update fail : seed name crawl no data!
+Id : DE1057DE6D9A472F860E6B2D0F891439 thread update fail : seed name crawl no data!
+Id : 9074301B253C4F928DE985710BA54171 thread update fail : seed name crawl no data!
+Id : B07B76FA5FD94127A64A2DC82A5FCBF7 thread update fail : seed name crawl no data!
+Id : E1FB0302E5674284A08DA3BAAD741ADC thread update fail : seed name crawl no data!
+Id : 7484AE5206BA4C7CB24A7D4651703749 thread update fail : seed name crawl no data!
+Id : 0416C7AB04364110BC1F422683B73423 thread update fail : seed name crawl no data!
+Id : 97B100F8DC4A4F9BB07B6575C70A7575 thread update fail : seed name crawl no data!
+Id : 164934708CD840DA87F3471227213C86 thread update fail : seed name crawl no data!
+Id : 1A2074676D5B40C98307C1CAD7BEAD76 thread update fail : seed name crawl no data!
+Id : DCEFA911D2E841F5BE3DEC1A12BD8C74 thread update fail : seed name crawl no data!
+Id : 2B3217E3708345CCA364A875F4AAA89E thread update fail : seed name crawl no data!
+Id : 7663A9713A03416CA357EE99070E1B07 thread update fail : seed name crawl no data!
+Id : EFAD43928A8345A584D0BFE6E1C38649 thread update fail : seed name crawl no data!
+Id : 828E5741ADE34AEFAC9CA071F253873A thread update fail : seed name crawl no data!
+Id : 52AE233FF1014671881DC6A05F027000 thread update fail : seed name crawl no data!
+Id : 8F449665E9184DE5B11157CC67AEF925 thread update fail : seed name crawl no data!
+Id : 0A1D09656A7546E596CD69886E929FCB thread update fail : seed name crawl no data!
+Id : F19FE6672E8F4BCCA0F5B8241A4C1D3D thread update fail : seed name crawl no data!
+Id : FB591A69BA3B4CCD902DED2468BC51A8 thread update fail : seed name crawl no data!
+Id : 7279D4DC4ECD43C38533384C411B40E7 thread update fail : seed name crawl no data!
+Id : 49B743842CD040F6A58455C41FF92EDB thread update fail : seed name crawl no data!
+Id : EC78CF91C7AE4DCF9D16E10ADFABC3D9 thread update fail : seed name crawl no data!
+Id : 57AF98C5B2694DD6BBD76905A9737FCF thread update fail : seed name crawl no data!
+Id : D4863318F9B4454BB763D3E998E5EB07 thread update fail : seed name crawl no data!
+Id : DA5B2CBF77164E92B0F47774FCD2346E thread update fail : seed name crawl no data!
+Id : 39AC6B69312B46B2BF67F5BD3D1C6CA2 thread update fail : seed name crawl no data!
+Id : 3D3CEAF4AB634F07B0889075D14D7E89 thread update fail : seed name crawl no data!
+Id : 14EBE81DD222419CA20B9CB160F66835 thread update fail : seed name crawl no data!
+Id : F80558F857DE4FA49D5FAB61C17F03BD thread update fail : seed name crawl no data!
+Id : C6CACA0224B24A55B33A2CBC03CCD09C thread update fail : seed name crawl no data!
+Id : 74401E2A6B8C41BCA605712676130A4C thread update fail : seed name crawl no data!
+Id : 027BE8FD85064CAD94CE498C2404A39F thread update fail : seed name crawl no data!
+Id : 95444A05F2C749E2BFCCAD98FFD25E08 thread update fail : seed name crawl no data!
+Id : FF5606A13D39479DADACE6B21BFE8BF6 thread update fail : seed name crawl no data!
+Id : 00F88141B04C4064A5E826BB9BF04771 thread update fail : seed name crawl no data!
+Id : BF21B9F34EAF474C9781F673E63DE8CC thread update fail : seed name crawl no data!
+Id : CF94D64484064441954116CB68C54EAF thread update fail : seed name crawl no data!
+Id : 27C0998B49C84766A7A4B9C56A6DCBE3 thread update fail : seed name crawl no data!
+Id : 1E660FF15E624197BB6B238B5EC44130 thread update fail : seed name crawl no data!
+Id : 23EFBA9A2CE14B0886378AC087EB01FF thread update fail : seed name crawl no data!
+Id : 78076630C5D24B3D989F683F9F4C9CDC thread update fail : seed name crawl no data!
+Id : 8E005BD5ECA04DD694E647282331828B thread update fail : seed name crawl no data!
+Id : B324B9B0140E4A27944745CFD758373B thread update fail : seed name crawl no data!
+Id : 3CF8DEB031C14B008CC269EEF6231D50 thread update fail : seed name crawl no data!
+Id : 21224FED006A4DBF9F7BD65C7495806A thread update fail : seed name crawl no data!
+Id : C314F90172E24F49995C4445E625BA2D thread update fail : seed name crawl no data!
+Id : 7C5C43F591C64826BDA360DA6EFAF089 thread update fail : seed name crawl no data!
+Id : C808DB70FCB148D482D9DDD43CC1B1DA thread update fail : seed name crawl no data!
+Id : 5C4D3E977C54404FA4018CE64F44CBB8 thread update fail : seed name crawl no data!
+Id : 818799BCDBBA4B3ABC0C2E79DA27753A thread update fail : seed name crawl no data!

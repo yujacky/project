@@ -1,0 +1,2327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html charset=GB2312" />
+<title>国家代码查询</title>
+<meta name="Keywords" content="宁波小包,宁波跨境物流,跨境物流专线,宁波快递,上海快递,电商物流,跨境物流,上海E邮宝,宁波E邮宝">
+<BASE href="HTTP://WWW.YADEXP.COM/">
+<link href="main.css"  rel="stylesheet" type="text/css" />
+<script src="info.js"  type="text/javascript"></script>
+<script type="text/javascript" src="jquery-1.2.6.js"></script> 
+<script type="text/javascript" src="tween.js"></script> 
+<script>
+var tb_h=new Array()
+function init(ids,cons,dis,hids,tbs){
+	 	document.getElementById(ids).getElementsByTagName('li')[0].className='active'
+		document.getElementById(cons).innerHTML=document.getElementById(dis+"l1").innerHTML
+		document.getElementById(ids).onmouseover=function(o){onmousOver(o,ids,cons,dis,hids)}//鼠标指向激发效果
+//		document.getElementById(ids).onclick=function(){onmousOver(ids,cons,dis,hids)}//点击激发效果
+		var obj_tab=document.getElementById(tbs)
+		tb_h[tbs]=obj_tab.offsetHeight
+}
+function onmousOver(o,ids,cons,dis,hids){
+var o = o || window.event
+var obj=o.target || o.srcElement
+if (obj.tagName=='LI'){
+		if (obj.className=='active'||obj.id==hids)return
+		var o=document.getElementById(ids).getElementsByTagName('li')
+		for (var i=0i<=o.length-2i++){o[i].className='default'}
+		
+		obj.className='active'
+		if (obj.className=='active'){document.getElementById(cons).innerHTML=document.getElementById(dis+obj.id).innerHTML}
+}
+}
+function show_con(tbs,ids,hids){
+var obj_click=document.getElementById(hids)
+obj_click.innerHTML=(obj_click.innerHTML=="+")?"-":"+"
+obj_click.className=(obj_click.className=='showme')?'hidme':'showme'
+var hid=(obj_click.className=='showme')?1:-1
+var obj_tab=document.getElementById(tbs)
+var obj_nav=document.getElementById(ids)
+var h_m=obj_nav.offsetHeight+2
+var H=tb_h[tbs]
+var n=20,t=50
+var timers=new Array(n)
+if (hid<0){
+    for(var i=0i<ni++){(
+    	function(){
+    		if(timers[i]) clearTimeout(timers[i])
+    		var j=i
+    		timers[i]=setTimeout(function(){obj_tab.style.height=H-Math.round((H-h_m)*(j+1)/n)+"px"},(i+1)*t)
+    	}
+    )()}
+}
+if (hid>0){
+    for(var i=0i<ni++){(
+    	function(){
+    		if(timers[i]) clearTimeout(timers[i])
+    		var j=i
+    		timers[i]=setTimeout(function(){obj_tab.style.height=h_m+Math.round(H*(j+1)/n)+"px"},(i+1)*t)
+    	}
+    )()}
+}
+}
+</script>
+
+<style>
+/*下拉菜单样式*/
+*{margin:0padding:0border:0px padding:0px margin:0px}
+#div_center { width:772px height:40PX background-image:url(pic/dh-2-bg.jpg) margin-left: automargin-right:auto z-index:2000font-family:'微软雅黑',Arial, Helvetica, sans-serif}  /*定义总体宽度、高度；background:003399 控制背景颜色,居中对齐*/
+#zzjs_net { line-height:40PX list-style-type: none margin-top:0pxtext-align:center height:40PXfont-family:'微软雅黑',Arial, Helvetica, sans-serif }         /*控制一级菜单行高；上边距5px；*/
+#zzjs_net a {width: 96PX display: blocktext-align:center font-size:15px color:#3D414A  font-family:'微软雅黑',Arial, Helvetica, sans-serif} /*一级菜单链接总体样式：每个菜单的宽，居中对齐，文字大小*/
+#zzjs_net a:link  { color:#3D414A text-decoration:nonemargin:0font-family:'微软雅黑',Arial, Helvetica, sans-serif}     /* 未访问的链接 */
+#zzjs_net a:visited  {color:#3D414Atext-decoration:nonemargin:0font-family:'微软雅黑',Arial, Helvetica, sans-serif}    /* 已访问的颜色 */
+#zzjs_net a:hover {color:#3D414Atext-decoration:none font-family:'微软雅黑',Arial, Helvetica, sans-serif }                /* 鼠标在链接上 */
+#zzjs_net li {float:leftfont-size:15px color:#3D414A font-family:'微软雅黑',Arial, Helvetica, sans-serif vertical-align:middle}                   /* 一级菜左对齐 */
+#zzjs_net li a:hover{ color:#fff font-size:15pxbackground-image:url(pic/top-1-bg.jpg)}     /* 鼠标在一级菜单上改变其背景色 */
+#zzjs_net li ul li a:hover{ color:#F4F3F1background-image:url(pic/top-1-bg.jpg) font-size:14px font-weight:bold}/* 鼠标在二级菜单上改变其背景色 */
+#zzjs_net li ul {color:#3D414Aline-height:25pxfilter:alpha(opacity=90) background-color:#F4F3F1list-style-type: nonetext-align:leftleft: -999em width:96PX position: absoluteborder-width:0pxborder-top-style: noneborder-right-style: solidborder-bottom-style: solidborder-left-style:solidpadding:0pxz-index:1font-family:'微软雅黑',Arial, Helvetica, sans-serif}             /*二级菜单总体样式：行高24px；背景颜色；外框宽度；相对位置；边框一个象素，上边没样式，左右下边实线，边框颜色#003399；内边距1个象素*/
+#zzjs_net li ul a{display:block width: 96PXtext-align:centerfont-size:12pxfont-family:'微软雅黑',Arial, Helvetica, sans-serif}                 /* 二级菜单链接样式；背景宽度、左对齐，左缩进2 */
+#zzjs_net li ul a:link  {text-decoration:nonefont-family:'微软雅黑',Arial, Helvetica, sans-serif}                                   /* 未访问的链接 */
+#zzjs_net li ul li a:visited  {text-decoration:nonefont-family:'微软雅黑',Arial, Helvetica, sans-serif}                                 /* 已访问的链接 */
+/* #zzjs_net li ul a:hover  {color:#fffffftext-decoration:nonefont-weight:normal background-image:url(pic/bg-6.jpg) font-weight:boldfont-family:'微软雅黑',Arial, Helvetica, sans-serif}/* 鼠标在链接上 */
+#zzjs_net li:hover ul {left: auto}
+#zzjs_net li.sfhover ul {left: auto}
+#content {clear: left}
+hr{border:1px solid #CCC}
+</style>
+
+
+<script type=text/javascript>
+<!--
+function menuFix() {
+    var sfEls = document.getElementById("zzjs_net").getElementsByTagName("li")
+    for (var i=0 i<sfEls.length i++) {
+        sfEls[i].onmouseover=function() {
+        this.className+=(this.className.length>0? " ": "") + "sfhover"
+        }
+        sfEls[i].onMouseDown=function() {
+        this.className+=(this.className.length>0? " ": "") + "sfhover"
+        }
+        sfEls[i].onMouseUp=function() {
+        this.className+=(this.className.length>0? " ": "") + "sfhover"
+        }
+        sfEls[i].onmouseout=function() {
+        this.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+"")
+        }
+    }
+}
+window.onload=menuFix
+
+function MM_preloadImages() { //v3.0
+  var d=document if(d.images){ if(!d.MM_p) d.MM_p=new Array()
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments for(i=0 i<a.length i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image d.MM_p[j++].src=a[i]}}
+}
+//-->
+</script>
+</head>
+
+<body>
+
+<DIV align="center" style="background-image:url(pic/bd-1-bg.jpg)background-repeat:repeat-xbackground-position:center TOP">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="1080" height="94">
+<TR>
+<TD width="308" height="94"><A href="http://www.yadexp.com"><IMG src="pic/BD-1-1.jpg" width="308" height="94"></A></TD>
+<TD width="772" height="94" align="left" valign="top">
+<DIV align="center" style="text-align:rightheight:23pxline-height:23pxfont-size:12PXfont-family:'宋体'color:#FFF">
+客服热线：<SPAN style="font-family:Arial, Helvetica, sans-serifcolor:#FDFE00font-size:12PXline-height:23px">400-9910-565</SPAN> &nbsp&nbsp <A href="http://www.yadexp.com/yadexp/207/d.htm" style="line-height:23pxfont-size:12PXfont-family:'宋体'color:#FFF">会员登录</A> | <A href="http://www.yadexp.com/yadexp/200/d.htm" style="line-height:23pxfont-size:12PXfont-family:'宋体'color:#FFF">会员注册</A> | <A href="http://www.yadexp.com/yadexp/198/d.htm" style="line-height:23pxfont-size:12PXfont-family:'宋体'color:#FFF">联系方式</A>
+</DIV>
+<DIV align="center" style="padding-top:31px">
+<!--网站导航--开始-->
+<div id="div_center" name="div_center" align="left">
+<UL id="zzjs_net"  name="zzjs_net">
+<LI><a href="http://www.yadexp.com/" style="font-size:14px text-align:center vertical-align:middle font-weight:boldfont-family:'宋体'">网站首页</A></LI>
+
+
+
+<LI><a href="http://www.yadexp.com/yadexp/174/d.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">关于我们</A>
+<ul>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/174/d.htm">公司简介</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/175/d.htm">招聘英才</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/176/d.htm">免责声明</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/177/d.htm">支付方式</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/cgi-bin/GInfo.dll?DispAdvice&w=yadexp">留言建议</a></li>
+</ul>
+</LI>
+
+
+<LI><a href="http://www.yadexp.com/yadexp/191/d.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">主营业务</A>
+<ul>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/178/d.htm">国际快递</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/179/d.htm">欧洲专线</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/180/d.htm">邮政小包</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/181/d.htm">DHL代理</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/182/d.htm">UPS代理</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/183/d.htm">FEDEX代理</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/184/d.htm">TNT代理</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/185/d.htm">EMS代理</a></li>
+</ul>
+</LI>
+
+
+
+<LI><a href="http://www.yadexp.com/yadexp/B7FECEF1CDA8D6AA/130/1/c.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">信息中心</A>
+<ul>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/B7FECEF1CDA8D6AA/130/1/c.htm">服务通知</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/D0D0D2B5D0C2CEC5/130/1/c.htm">行业新闻</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/C8BCD3CDB8BDBCD3B7D1/130/1/c.htm">燃油附加费</a></li>
+</ul>
+</LI>
+
+<LI><a href="http://www.yadexp.com/yadexp/190/d.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">客户服务</A>
+<ul>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/190/d.htm">快件追踪</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/191/d.htm">运费计算</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/192/d.htm">在线下单</a></li>
+</ul>
+</LI>
+
+<LI><a href="http://www.yadexp.com/yadexp/193/d.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">增值服务</A>
+<ul>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/193/d.htm">保险理赔</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/194/d.htm">特殊包装</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/195/d.htm">代办磁检</a></li>
+<li style="border-bottom:1px solid #FFF"><a href="http://www.yadexp.com/yadexp/196/d.htm">代办化检</a></li>
+</ul>
+</LI>
+
+<LI><a href="http://www.yadexp.com/yadexp/197/d.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">发货指南</A></LI>
+
+<LI><a href="http://www.yadexp.com/yadexp/198/d.htm" style="font-size:14px text-align:center vertical-align:middlefont-weight:boldfont-family:'宋体'">联系我们</A></LI>
+
+</ul>
+
+
+</UL>
+</div>
+<!--网站导航模块--结束-->
+</DIV>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV align="center" style="background-image:url(pic/BD-2-BG.jpg)background-repeat:no-repeatbackground-position:center top">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="1080" height="254">
+<TR>
+<TD align="center" valign="middle">
+<!--小图切换--开始-->
+<div id="picplayer" style="position:relativeoverflow:hiddenwidth:1080pxheight:254pxclear:noneborder:0 z-index:0"> 
+
+</div> 
+<script> 
+var p = $('#picplayer') 
+var pics1 = [{url:'pic/G-1.jpg',link:'http://www.yadexp.com',time:3000},{url:'pic/G-2.jpg',link:'http://www.yadexp.com',time:3000},{url:'pic/G-3.jpg',link:'http://www.yadexp.com',time:3000},{url:'pic/G-4.jpg',link:'http://www.yadexp.com',time:3000}] 
+initPicPlayer(pics1,p.css('width').split('px')[0],p.css('height').split('px')[0]) 
+// 
+// 
+function initPicPlayer(pics,w,h) 
+{ 
+//选中的图片 
+var selectedItem 
+//选中的按钮 
+var selectedBtn 
+//自动播放的id 
+var playID 
+//选中图片的索引 
+var selectedIndex 
+//容器 
+var p = $('#picplayer') 
+p.text('') 
+p.append('<div id="piccontent"></div>') 
+var c = $('#piccontent') 
+for(var i=0i<pics.lengthi++) 
+{ 
+//添加图片到容器中 
+c.append('<a href="'+pics[i].link+'"><img id="picitem'+i+'" style="display: nonez-index:'+i+'" src="'+pics[i].url+'" /></a>') 
+} 
+//按钮容器，绝对定位在右下角 
+p.append('<div id="picbtnHolder" style="position:absolutetop:'+(h-25)+'pxwidth:'+w+'pxheight:20pxz-index:10000"></div>') 
+// 
+var btnHolder = $('#picbtnHolder') 
+btnHolder.append('<div id="picbtns" style="float:right padding-right:520px"></div>') 
+var btns = $('#picbtns') 
+// 
+for(var i=0i<pics.lengthi++) 
+{ 
+//增加图片对应的按钮 
+btns.append('<span id="picbtn'+i+'" style="cursor:pointer border:solid 1px #cccbackground-color:#eee display:inline-blockwidth:18pxtest-align:center"> '+(i+1)+' </span> ') 
+$('#picbtn'+i).data('index',i) 
+$('#picbtn'+i).click( 
+function(event) 
+{ 
+if(selectedItem.attr('src') == $('#picitem'+$(this).data('index')).attr('src')) 
+{ 
+return 
+} 
+setSelectedItem($(this).data('index')) 
+} 
+) 
+} 
+btns.append(' ') 
+/// 
+setSelectedItem(0) 
+//显示指定的图片index 
+function setSelectedItem(index) 
+{ 
+selectedIndex = index 
+clearInterval(playID) 
+//alert(index) 
+if(selectedItem)selectedItem.fadeOut('fast') 
+selectedItem = $('#picitem'+index) 
+selectedItem.fadeIn('slow') 
+// 
+if(selectedBtn) 
+{ 
+selectedBtn.css('backgroundColor','#eee') 
+selectedBtn.css('color','#000') 
+} 
+selectedBtn = $('#picbtn'+index) 
+selectedBtn.css('backgroundColor','#3460AB') 
+selectedBtn.css('color','#fff') 
+//自动播放 
+playID = setInterval(function() 
+{ 
+var index = selectedIndex+1 
+if(index > pics.length-1)index=0 
+setSelectedItem(index) 
+},pics[index].time) 
+} 
+} 
+</script> 
+
+<!--小图切换--结束-->
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV align="center" style="background-image:url(pic/BD-BG-N.jpg)background-repeat:no-repeatbackground-position:center TOP">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="1080" style="border-bottom:1px solid #CCC">
+<TR>
+<TD height="16"></TD>
+</TR>
+<TR>
+<TD align="left" valign="top" style="background-image:url(pic/BD-BG-N2.jpg)background-repeat:repeat-y">
+<TABLE border="0" cellpadding="0" cellspacing="0" width="100%">
+<TR>
+<TD align="left" valign="top" height="400" style="padding:8px">
+
+                           
+                          
+                            <div class='kindc' id='oClassName' name='oClassName'>亚东国际速递 &gt&gt 其他查询工具</div><br><div align='center' class='titlc' id='oTitle' name='oTitle'>国家代码查询<hr size=1 noshade color=#1E3E3E></div>
+
+<div class='contc' id='oContent'>按键盘上的Ctrl+F,网页浏览器右上角输入关键词,可以快速查找！
+<HR SIZE=1>
+<TABLE align=center border=0 cellPadding=0 cellSpacing=0 width="100%" style="border:1px solid #CCC">
+  <TBODY>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" height=32 width="27%"><FONT color=#000000 
+                        size=2><strong>Countries and Regions</strong></FONT><strong>
+        </TH>
+      </strong>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=32 width="24%"><FONT 
+                        color=#000000 size=2><strong>国家或地区</strong></FONT><strong>
+      </TH>
+      </strong>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=32 width="20%"><B><FONT face=宋体 
+                        size=2>国际域名缩写</FONT></B></TH>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=32 width="15%"><FONT 
+                        color=#000000 size=2><strong>电话代码 </strong></FONT><strong>
+      </TH>
+      </strong>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=32 width="14%"><FONT 
+                        size=2><strong>时差</strong></FONT><strong>
+      </TH>
+    </strong></TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Angola</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>安哥拉</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>244</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Afghanistan</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>阿富汗</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AF</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>93</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Albania</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>阿尔巴尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AL</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>355</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Algeria</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>阿尔及利亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>DZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>213</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Andorra</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>安道尔共和国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AD</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>376</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Anguilla</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>安圭拉岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1264</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Antigua and 
+        Barbuda</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>安提瓜和巴布达</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1268</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Argentina</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>阿根廷</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>54</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-11</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Armenia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>亚美尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>374</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Ascension</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>阿森松</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>247</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Australia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>澳大利亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>61</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+2</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Austria</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>奥地利</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>43</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Azerbaijan</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>阿塞拜疆</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>994</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Bahamas</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴哈马</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BS</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1242</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Bahrain</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴林</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BH</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>973</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Bangladesh</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>孟加拉国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BD</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>880</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-2</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Barbados</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴巴多斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BB</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1246</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Belarus</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>白俄罗斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>375</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Belgium</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>比利时</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>32</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Belize</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>伯利兹</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>501</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Benin</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>贝宁</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BJ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>229</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Bermuda Is.</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>百慕大群岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1441</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Bolivia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>玻利维亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>591</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Botswana</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>博茨瓦纳</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BW</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>267</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Brazil</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴西</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>55</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-11</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Brunei</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>文莱</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>673</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Bulgaria</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>保加利亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>359</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT 
+                      color=#000000>Burkina-faso</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>布基纳法索</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BF</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>226</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Burma</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>缅甸</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>95</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-1.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Burundi</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>布隆迪</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>BI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>257</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Cameroon</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>喀麦隆</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>237</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Canada</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>加拿大</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Cayman Is.</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>开曼群岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1345</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Central African Republic</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>中非共和国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CF</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>236</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Chad</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>乍得</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TD</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>235</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Chile</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>智利</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CL</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>56</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">China</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>中国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>86</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Colombia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>哥伦比亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>57</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Congo</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>刚果</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>242</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Cook Is.</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>库克群岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CK</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>682</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-18.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Costa Rica</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>哥斯达黎加</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>506</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Cuba</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>古巴</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>53</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Cyprus</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>塞浦路斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>357</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Czech Republic </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>捷克</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>420</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Denmark</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>丹麦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>DK</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>45</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Djibouti</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>吉布提</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>DJ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>253</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Dominica Rep.</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>多米尼加共和国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>DO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1890</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Ecuador</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>厄瓜多尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>EC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>593</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Egypt</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>埃及</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>EG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>20</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>EI Salvador</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>萨尔瓦多</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SV</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>503</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" height=17 width="27%">Estonia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=17 width="24%"><FONT 
+                        size=2>爱沙尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=17 width="20%"><FONT 
+                        size=2>EE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=17 width="15%"><FONT 
+                        size=2>372</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=17 width="14%"><FONT 
+                        size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Ethiopia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>埃塞俄比亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ET</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>251</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Fiji</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>斐济</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>FJ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>679</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Finland</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>芬兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>FI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>358</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>France</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>法国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>FR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>33</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>French Guiana</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>法属圭亚那</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GF</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>594</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Gabon</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>加蓬</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>241</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Gambia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>冈比亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>220</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Georgia </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>格鲁吉亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>995</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Germany </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>德国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>DE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>49</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Ghana</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>加纳</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GH</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>233</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Gibraltar</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>直布罗陀</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>350</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Greece</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>希腊</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>30</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Grenada</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>格林纳达</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GD</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1809</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Guam</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>关岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1671</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+2</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Guatemala</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>危地马拉</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>502</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Guinea</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>几内亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>224</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Guyana</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>圭亚那</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>592</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-11</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Haiti</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>海地</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>HT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>509</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Honduras</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>洪都拉斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>HN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>504</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Hongkong</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>香港</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>HK</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>852</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Hungary</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>匈牙利</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>HU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>36</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Iceland</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>冰岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IS</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>354</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-9</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>India</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>印度</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>91</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-2.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Indonesia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>印度尼西亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ID</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>62</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-0.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Iran</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>伊朗</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>98</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-4.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Iraq</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>伊拉克</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IQ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>964</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Ireland</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>爱尔兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>353</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-4.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Israel</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>以色列</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IL</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>972</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Italy</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>意大利</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>IT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>39</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Ivory Coast</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>科特迪瓦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>225</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Jamaica</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>牙买加</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>JM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1876</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Japan</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>日本</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>JP</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>81</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Jordan</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>约旦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>JO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>962</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Kampuchea (Cambodia )</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>柬埔寨</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KH</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>855</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Kazakstan</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>哈萨克斯坦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>327</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Kenya</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>肯尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>254</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Korea</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>韩国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>82</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Kuwait</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>科威特</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KW</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>965</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Kyrgyzstan </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>吉尔吉斯坦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>331</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Laos</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>老挝</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>856</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Latvia </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>拉脱维亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LV</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>371</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Lebanon</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>黎巴嫩</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LB</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>961</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Lesotho</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>莱索托</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LS</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>266</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Liberia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>利比里亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>231</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Libya</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>利比亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>218</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT 
+                      color=#000000>Liechtenstein</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>列支敦士登</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>423</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Lithuania</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>立陶宛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>370</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Luxembourg</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>卢森堡</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>352</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Macao</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>澳门</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>853</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Madagascar</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马达加斯加</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>261</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Malawi</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马拉维</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MW</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>265</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Malaysia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马来西亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>60</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-0.5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Maldives</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马尔代夫</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MV</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>960</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Mali</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马里</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ML</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>223</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Malta</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马耳他</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>356</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Mariana Is</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马里亚那群岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1670</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Martinique</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>马提尼克</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>596</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Mauritius</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>毛里求斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>230</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Mexico</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>墨西哥</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MX</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>52</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-15</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Moldova, Republic of </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>摩尔多瓦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MD</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>373</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Monaco</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>摩纳哥</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>377</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Mongolia </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>蒙古</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>976</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Montserrat 
+        Is</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>蒙特塞拉特岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MS</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1664</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Morocco</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>摩洛哥</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>212</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Mozambique</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>莫桑比克</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>MZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>258</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Namibia </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>纳米比亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>264</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Nauru</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>瑙鲁</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>674</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Nepal</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>尼泊尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NP</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>977</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-2.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Netheriands 
+        Antilles</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>荷属安的列斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>599</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT 
+color=#000000>Netherlands</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>荷兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NL</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>31</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>New Zealand</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>新西兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>64</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Nicaragua</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>尼加拉瓜</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>505</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-14</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Niger</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>尼日尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT face=宋体 
+                        size=2>NE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>227</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Nigeria</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>尼日利亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>234</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">North Korea</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>朝鲜</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>KP</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>850</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Norway</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>挪威</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>NO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>47</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Oman</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>阿曼</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>OM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>968</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Pakistan</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴基斯坦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PK</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>92</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-2.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Panama</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴拿马</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>507</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Papua New 
+        Cuinea</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴布亚新几内亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>675</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+2</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Paraguay</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>巴拉圭</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>595</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Peru</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>秘鲁</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>51</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT 
+color=#000000>Philippines</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>菲律宾</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PH</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>63</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Poland</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>波兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PL</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>48</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>French Polynesia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>法属玻利尼西亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PF</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>689</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Portugal</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>葡萄牙</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>351</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Puerto Rico</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>波多黎各</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>PR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1787</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Qatar</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>卡塔尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>QA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>974</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Reunion</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>留尼旺</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>262</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Romania</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>罗马尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>RO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>40</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Russia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>俄罗斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>RU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>7</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Saint Lueia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>圣卢西亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>1758</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Saint Vincent</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>圣文森特岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>VC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>1784</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Samoa Eastern</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>东萨摩亚(美)</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>684</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-19</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Samoa Western</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>西萨摩亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>&nbsp</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>685</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-19</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>San Marino</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>圣马力诺</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>378</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Sao Tome and 
+        Principe</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>圣多美和普林西比</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ST</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>239</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Saudi Arabia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>沙特阿拉伯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>966</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Senegal</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>塞内加尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>221</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Seychelles</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>塞舌尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>248</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Sierra Leone</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>塞拉利昂</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SL</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>232</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Singapore</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>新加坡</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>65</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>+0.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Slovakia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>斯洛伐克</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SK</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>421</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Slovenia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>斯洛文尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SI</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>386</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" height=18 width="27%"><FONT color=#000000>Solomon 
+        Is</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=18 width="24%"><FONT 
+                        color=#000000 size=2>所罗门群岛</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=18 width="20%"><FONT 
+                        size=2>SB</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=18 width="15%"><FONT 
+                        color=#000000 size=2>677</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=18 width="14%"><FONT 
+                        size=2>+3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Somali</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>索马里</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>252</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">South Africa</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>南非</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ZA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>27</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Spain</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>西班牙</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ES</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>34</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Sri Lanka</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>斯里兰卡</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LK</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>94</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>St.Lucia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>圣卢西亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>LC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1758</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>St.Vincent</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>圣文森特</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>VC</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1784</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Sudan</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>苏丹</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SD</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>249</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Suriname</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>苏里南</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>597</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-11.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Swaziland</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>斯威士兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>268</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Sweden</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>瑞典</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>46</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT 
+color=#000000>Switzerland</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>瑞士</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>CH</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>41</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Syria</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>叙利亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>SY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>963</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Taiwan</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>台湾省</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TW</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>886</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT size=2>0</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Tajikstan</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>塔吉克斯坦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TJ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>992</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Tanzania</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>坦桑尼亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>255</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Thailand</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>泰国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TH</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>66</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Togo</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>多哥</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>228</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Tonga</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>汤加</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TO</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>676</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>+4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Trinidad and 
+        Tobago</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>特立尼达和多巴哥</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TT</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1809</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Tunisia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>突尼斯</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>216</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Turkey</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>土耳其</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>90</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Turkmenistan </TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+size=2>土库曼斯坦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>TM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>993</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Uganda</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>乌干达</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>UG</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>256</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Ukraine</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>乌克兰</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>UA</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>380</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>United Arab 
+        Emirates</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>阿拉伯联合酋长国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>AE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>971</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-4</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>United Kiongdom</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>英国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>GB</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>44</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-8</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>United States 
+        of America</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>美国</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>US</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>1</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-13</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Uruguay</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>乌拉圭</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>UY</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>598</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-10.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Uzbekistan</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT 
+                      size=2>乌兹别克斯坦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>UZ</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>233</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Venezuela</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>委内瑞拉</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>VE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>58</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-12.3</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Vietnam</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>越南</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>VN</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>84</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-1</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" height=19 width="27%"><FONT 
+                        color=#000000>Yemen</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=19 width="24%"><FONT 
+                        color=#000000 size=2>也门</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=19 width="20%"><FONT 
+                        size=2>YE</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=19 width="15%"><FONT 
+                        color=#000000 size=2>967</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle height=19 width="14%"><FONT 
+                        size=2>-5</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Yugoslavia</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>南斯拉夫</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>YU</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>381</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Zimbabwe</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>津巴布韦</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ZW</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>263</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-6</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%">Zaire</TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT size=2>扎伊尔</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ZR</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT size=2>243</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+size=2>-7</FONT></TD>
+    </TR>
+    <TR>
+      <TD style="border:1px solid #CCCpadding:3PX" width="27%"><FONT color=#000000>Zambia</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="24%"><FONT color=#000000 
+                        size=2>赞比亚</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="20%"><FONT size=2>ZM</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="15%"><FONT color=#000000 
+                        size=2>260</FONT></TD>
+      <TD style="border:1px solid #CCCpadding:3PX" align=middle width="14%"><FONT 
+                    size=2>-6</FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE></div>
+
+<br><div id='theClose' class='infodatec'>亚东国际速递[2016.04.27-19:36] 访问：16124<br><table border='0' cellpadding='2' width='100%'><tr><td align='right' background='/GInfoPic/0.gif' class='closea'> [<a href='javascript:window.close()' class='closec'>关闭窗口</a>]&nbsp&nbsp</td></tr></table></div>
+
+</TD>
+<TD width="200" align="left" valign="top" style="border-left:2px dotted #999">
+<DIV align="center" style="padding:8PXtext-align:leftline-height:21PX">
+<STRONG style="font-family:'宋体' font-size:15PX">服务导航</STRONG>
+<SPAN style="font-family:Arial, Helvetica, sans-seriffont-size:10pxcolor:#888">Service Navigation</SPAN>
+<BR>
+<A href="http://www.yadexp.com/yadexp/200/d.htm" style="color:#676767">会员服务中心</A>
+<BR>
+<A href="http://www.yadexp.com/yadexp/190/d.htm" style="color:#676767">货物包裹追踪查询</A>
+<BR>
+<A href="http://www.yadexp.com/yadexp/191/d.htm" style="color:#676767">快递公布运费查询</A>
+<BR>
+<A href="http://www.yadexp.com/cgi-bin/GInfo.dll?DispAdvice&w=yadexp" style="color:#676767">留言建议</A>
+<BR>
+<a href="http://www.yadexp.com/yadexp/B7FECEF1CDA8D6AA/130/1/c.htm" style="color:#676767">服务通知</a>
+<br>
+<a href="http://www.yadexp.com/yadexp/C8BCD3CDB8BDBCD3B7D1/130/1/c.htm" style="color:#676767">燃油附加费</a>
+</DIV>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+
+
+
+
+
+<DIV align="center" style="padding-top:14pxpadding-bottom:14px">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="1080" height="51" style="background-image:url(pic/BD-7-BG.jpg)background-repeat:repeat-x">
+<TR>
+<TD width="90" height="51"><IMG src="pic/BD-7-1.jpg" width="90" height="51"></TD>
+<TD align="center" valign="middle"><A href="http://www.TNT.com" target="_blank"><IMG src="pic/link/TNT.gif"></A></TD>
+<TD align="center" valign="middle"><A href="http://www.ems.com.cn" target="_blank"><IMG src="pic/link/EMS.gif"></A></TD>
+<TD align="center" valign="middle"><A href="http://www.dhl.com" target="_blank"><IMG src="pic/link/dhl.gif"></A></TD>
+<TD align="center" valign="middle"><A href="http://www.ups.com" target="_blank"><IMG src="pic/link/UPS.gif"></A></TD>
+<TD align="center" valign="middle"><A href="http://www.fedex.com" target="_blank"><IMG src="pic/link/FEDEX.gif"></A></TD>
+<TD align="center" valign="middle"><A href="http://www.alipay.com" target="_blank"><IMG src="pic/link/ALIPAY.gif"></A></TD>
+<TD width="5" height="51"><IMG src="pic/BD-7-3.jpg" width="5" height="51"></TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV align="center" style="border-top:2px solid #0065B3background-color:#F4F3F1">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="1080" height="205" style="background-image:url(pic/bd-8-bg.jpg)background-repeat:no-repeatbackground-position:center top">
+<TR>
+<TD align="left" valign="top" width="415">
+<DIV align="center" style="text-align:leftfont-size:12PXcolor:#333font-family:'宋体'padding-top:53PXline-height:23PXpadding-left:5PX">
+<strong>客服热线</strong>：400-9910-565 <BR>
+<strong>总部地址</strong>：浙江省,绍兴市,柯桥世贸中心B区1楼25号<BR>
+<strong>销售顾问</strong>：蒋午传（电话:13575504277）<BR>
+<BR>
+<A href="http://www.yadexp.com/yadexp/198/d.htm" style="font-size:12PXfont-family:'宋体'">全部网点联系方式>></A>
+</DIV>
+</TD>
+<TD align="left" valign="top" width="282">
+<DIV align="center" style="text-align:leftpadding-top:53PXpadding-right:40PXpadding-left:5PX">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/174/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">公司简介</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/B7FECEF1CDA8D6AA/130/1/c.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">服务通知</A></TD>
+</TR>
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/211/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">经营范围</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/207/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">服务条款</A></TD>
+</TR>
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/208/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">合作方式</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/176/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">免责声明</A></TD>
+</TR>
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/175/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">招聘英才</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/177/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">支付方式</A></TD>
+</TR>
+</TABLE>
+</DIV>
+</TD>
+<TD align="left" valign="top">
+<DIV align="center" style="text-align:leftpadding-top:53PXpadding-right:30PXpadding-left:5PX">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/205/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">偏远地区查询</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/C8BCD3CDB8BDBCD3B7D1/130/1/c.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">燃油附加费</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/210/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">航空总单查询</A></TD>
+</TR>
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/206/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">航空公司查询</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/208/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">全球机场查询</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/211/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">品牌目录查询</A></TD>
+</TR>
+<TR>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/207/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">港口查询</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/209/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">国家代码查询</A></TD>
+<TD align="left" valign="middle"><A href="http://www.yadexp.com/yadexp/212/d.htm" style="font-size:12PXcolor:#333font-family:'宋体'line-height:23PX">世界地图查询</A></TD>
+</TR>
+</TABLE>
+</DIV>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+<DIV align="center" style="background-color:#0065B3">
+<TABLE border="0" cellpadding="0" cellspacing="0" align="center" width="1080" height="20">
+<TR>
+<TD align="center" valign="middle" style="color:#FFFfont-family:Arial, Helvetica, sans-seriffont-size:12px">
+Copyriht &copy yadexp.com All right reserved <SPAN style="font-size:12PXfont-family:'宋体'color:#FFF">版权所有 亚东国际速递</SPAN>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+
+
+</body>
+</html>
+
