@@ -121,7 +121,7 @@ public class BaiduWeatherCrawl {
 		long start = System.currentTimeMillis();
 		for(int i = 0;i<100;i++){
 			long st = System.currentTimeMillis();
-			c.getWeatherLiveByCity("乐昌");
+			c.getWeatherLiveByCity("lc");
 			long dif1 = System.currentTimeMillis() - st;
 			total += dif1;
 			len++;
